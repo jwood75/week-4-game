@@ -4,6 +4,9 @@
 	<title></title>
 
 <!-- ======================================================= -->
+	<!-- linking reset css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
 	<!-- linking bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,33 +18,45 @@
 
 <body>
 
-	<h1>Number To Guess <span id="numberGuess"></span></h1>
+	<h1>Number To Guess: <span id="numberGuess"></span></h1>
 
-	<div class="row">
-		
-		<div class="col-md-3 crystalImage">
+	<div class="container">
+
+		<div class="row">
 			
-		</div>
+			<div class="col-md-3">
 
-		<div class="col-md-3 crystalImage">
-			
-		</div>
+				<img class="crystalImage" id="crystal1" src="assets/images/crystal1.png">
+				
+			</div>
 
-		<div class="col-md-3 crystalImage">
-			
-		</div>
+			<div class="col-md-3">
 
-		<div class="col-md-3 crystalImage">
-			
-		</div>
+				<img class= "crystalImage" id="crystal2" src="assets/images/crystal2.png">
+				
+			</div>
 
-	</div>
+			<div class="col-md-3">
+
+				<img class="crystalImage" id="crystal3" src="assets/images/crystal3.png">
+				
+			</div>
+
+			<div class="col-md-3">
+
+				<img class="crystalImage" id="crystal4" src="assets/images/crystal4.png">
+				
+			</div>
+
+		</div> <!-- end of row -->
+
+	</div> <!-- end of container -->
 
 <!-- ====================================================== -->
 		<!-- linking Jquery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
-		<!-- link javascript -->
+		<!-- linking javascript -->
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 <!-- ====================================================== -->
 
