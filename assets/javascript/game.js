@@ -8,18 +8,18 @@ $(document).ready(function(){
 
 // var randomNumber = targetNumber[Math.floor(Math.random() * targetNumber.length) ];
 
-var targetNumber = Math.floor(Math.random()*101+19); //selecting random number to be guessed 
+	var targetNumber = Math.floor(Math.random()*101+19); //selecting random number to be guessed 
 
-var img1 = Math.floor(Math.random()*11+1);
-var img2 = Math.floor(Math.random()*11+1);
-var img3 = Math.floor(Math.random()*11+1);
-var img4 = Math.floor(Math.random()*11+1);
+	var img1 = Math.floor(Math.random()*11+1);
+	var img2 = Math.floor(Math.random()*11+1);
+	var img3 = Math.floor(Math.random()*11+1);
+	var img4 = Math.floor(Math.random()*11+1);
 
-var counter = 0;
+	var counter = 0;
 
-var win = 0;
+	var win = 0;
 
-var lose = 0;
+	var lose = 0;
 //=========================================================================================================
 
 	// //setting random target number to appear in #numberGuess==================== 
