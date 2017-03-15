@@ -33,9 +33,9 @@ $(document).ready(function(){
 
 	$("#numberGuess").text(targetNumber);
 
-	$("#win").text("Wins: " + win);
+	$("#win").text("wins: " + win);
 
-	$("#lose").text("Losses: " + lose);
+	$("#lose").text("losses: " + lose);
 
 	$("#score").text("score: " + counter);
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	function reset(){
 
-		var targetNumber = Math.floor(Math.random()*101+19);
+		targetNumber = Math.floor(Math.random()*101+19);
 		$("#numberGuess").text(targetNumber);
 
 		img1 = Math.floor(Math.random()*11+1);
@@ -57,20 +57,24 @@ $(document).ready(function(){
 		$("#score").text("score: " + counter);
 	}
 
-	function win(){
+	function winner(){
 
 		$("#score").text("You Win!");
 
 		win++;
 
+		$("#win").text("wins: " + win)
+
 		reset(); //calling reset function to reset game
 	}
 	
-	function lose(){
+	function loser(){
 
 		$("#score").text("You Lose! :(");
 
 		lose++;
+
+		$("#lose").text("losses: " + lose)
 
 		reset(); //calling reset function to reset game
 	}
@@ -85,12 +89,12 @@ $(document).ready(function(){
 
 		if (counter === targetNumber) {
 
-			win();
+			winner();
 		}
 
 		else if (counter >= targetNumber) {
 
-			lose();
+			loser();
 		}
 	});
 
@@ -102,12 +106,12 @@ $(document).ready(function(){
 
 		if (counter === targetNumber) {
 
-			win();
+			winner();
 		}
 
 		else if (counter >= targetNumber) {
 
-			lose();
+			loser();
 		}
 	});
 
@@ -119,12 +123,12 @@ $(document).ready(function(){
 
 		if (counter === targetNumber) {
 
-			win();
+			winner();
 		}
 
 		else if (counter >= targetNumber) {
 
-			lose();
+			loser();
 		}
 	});
 
@@ -136,12 +140,12 @@ $(document).ready(function(){
 
 		if (counter === targetNumber) {
 
-			win();
+			winner();
 		}
 
 		else if (counter >= targetNumber) {
 
-			lose();
+			loser();
 		}
 	});
 
