@@ -8,9 +8,13 @@ var crystalValue = [1,2,4,5,6,7,8,9,10,11,12];
 
 var randomNumber = targetNumber[Math.floor(Math.random() * targetNumber.length) ];
 
-var randomCrystalValue = crystalValue[Math.floor(Math.random() * crystalValue.length) ];
+var randomCrystalValue = crystalValue[Math.floor(Math.random() * crystalValue.length)];
 
 var counter = 0
+
+var win = 0;
+
+var lose = 0;
 //=========================================================================================================
 
 $(document).ready(function(){
@@ -26,15 +30,29 @@ $(document).ready(function(){
 	for (var i = 0; i < randomCrystalValue.length; i++) {
 
 		$(".crystalImage").attr(randomCrystalValue[i]);
-
-		$(".crystalImage").append(randomCrystalValue);
-	}
-//====================================================
+	} //doesn't work right >:| 
+//==================================================================================
 
 	//creating on click function to add crystal value to counter
 	$(".crystalImage").on("click", function () {
 
-		alert(randomCrystalValue);
+		counter += randomCrystalValue
+
+		// alert("New Score: " + counter);
+		$("#score").text("score: " + counter);
+
+		if (counter === randomNumber) {
+
+			$("#score").text("You Win!!")
+		}
+
+		else if (counter >= randomNumber) {
+
+			$("#score").text("You Lose! :(")
+
+		}
+
 	});
+//================================================================================
 
 });
