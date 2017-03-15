@@ -77,7 +77,7 @@ var lose = 0;
 //==================================================================================
 
 //creating on click function to each image to add value and calling win and lose functions
-	$("#crystal1").on('click', function(){
+	$("#shootingStar").on('click', function(){
 
 		counter += img1;
 
@@ -94,7 +94,7 @@ var lose = 0;
 		}
 	});
 
-	$("#crystal2").on('click', function(){
+	$("#clover").on('click', function(){
 
 		counter += img2;
 
@@ -111,7 +111,7 @@ var lose = 0;
 		}
 	});
 
-	$("#crystal3").on('click', function(){
+	$("#heart").on('click', function(){
 
 		counter += img3;
 
@@ -128,7 +128,7 @@ var lose = 0;
 		}
 	});
 
-	$("#crystal4").on('click', function(){
+	$("#horseShoe").on('click', function(){
 
 		counter += img4;
 
@@ -147,9 +147,9 @@ var lose = 0;
 
 
 	//creating on click function to add value to crystal and to counter
-	// $(".crystalImage").on("click", function () {
+	// $(".charmImage").on("click", function () {
 
-	// 	counter += randomCrystalValue;
+	// 	counter += randomCharmValue;
 
 	// 	$("#score").text("score: " + counter);
 

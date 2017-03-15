@@ -1,5 +1,15 @@
 body{
-	background-color: #99c3b4;
+	background-color: #c3f9ff;
+	background-image: url("../images/flat-rainbow.png");
+	background-attachment: fixed;
+	background-position: 100px;
+}
+
+h4{
+	font-family: 'chewy', cursive;
+	font-size: 80px;
+	text-align: center;
+	color: #fff;
 }
 
 h1{
